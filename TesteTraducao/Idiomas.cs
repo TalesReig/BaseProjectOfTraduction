@@ -6,8 +6,8 @@ namespace TesteTraducao
 {
     public class Idiomas
     {
-        private ResourceManager rm;
-        private CultureInfo ci;
+        private readonly ResourceManager rm;
+        private readonly CultureInfo ci;
 
         public Idiomas(string idioma)
         {
