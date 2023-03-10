@@ -8,6 +8,7 @@ using System.IO;
 using iText.Kernel.Colors;
 using iText.Kernel.Font;
 using iText.Kernel.Geom;
+using System;
 
 namespace TesteTraducao
 {
@@ -15,6 +16,15 @@ namespace TesteTraducao
     {
         public void GeneratePdf(List<GenericClass> items, string filename)
         {
+            // Get the path to "MeusDocumentos"
+            string folderPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "C:\\MeusDocumentos\\");
+
+            // Check if the folder exists; create it if it doesn't
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
             // Create a new PDF document
             PdfDocument pdf = new PdfDocument(new PdfWriter(new FileStream(@"C:\MeusDocumentos\"+filename+".pdf", FileMode.Create)));
 

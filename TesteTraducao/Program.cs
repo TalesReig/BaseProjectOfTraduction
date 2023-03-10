@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace TesteTraducao
 {
@@ -6,17 +7,16 @@ namespace TesteTraducao
     {
         static void Main(string[] args)
         {
-            Idiomas idioma = new Idiomas("en-US");
+            Idiomas idioma = new Idiomas(args[0]);
             Console.WriteLine(idioma.GetMensagem("Welcome"));
             Console.ReadKey();
-
 
             GerenciadorGenerico manager = new GerenciadorGenerico();
 
             int choice = 0;
             while (choice != 5)
             {
-                Console.WriteLine("Escolha uma opção:");
+                Console.WriteLine(idioma.GetMensagem("Escolha uma opção:"));
                 Console.WriteLine("1 - Adicionar objeto");
                 Console.WriteLine("2 - Remover objeto");
                 Console.WriteLine("3 - Listar objetos");
