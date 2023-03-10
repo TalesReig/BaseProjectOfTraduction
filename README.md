@@ -4,7 +4,7 @@ Este é um projeto fictício criado para demonstrar a estrutura básica de um RE
 ## Descrição
 Este projeto tem como objetivo demonstrar como criar um README simples, organizado e eficaz. Através deste README, você poderá entender o que o projeto faz, como utilizá-lo e quais são suas principais funcionalidades.
 
-##Instalação
+## Instalação
 Para instalar o projeto, basta clonar o repositório e instalar as dependências necessárias:
 
 ```bash
@@ -12,14 +12,14 @@ git clone https://github.com/seu-usuario/nome-do-projeto.git
 ```
 ```
 cd nome-do-projeto
-npm install
+dotnet build
 ```
 ## Uso
 Para utilizar o projeto, basta executar o seguinte comando:
 
 bash
-```Copy code
-npm start
+```
+dotnet run
 ```
 Isso iniciará o projeto em seu ambiente local. A partir daí, você poderá acessar o projeto através do navegador em http://localhost:3000.
 
