@@ -8,7 +8,7 @@ Este projeto tem como objetivo demonstrar como criar um README simples, organiza
 Para instalar o projeto, basta clonar o repositório e instalar as dependências necessárias:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-projeto.git
+https://github.com/TalesReig/BaseProjectOfTraduction.git
 ```
 ```
 cd nome-do-projeto
